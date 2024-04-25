@@ -1,0 +1,65 @@
+<html>
+<title>
+    Forms
+</title>
+
+<head>
+
+</head>
+
+<body>
+    <h2>Status Email</h2>
+    <form action="https://www.google.com/" method="get">
+        <fieldset>
+            <legend>Sender/Reciever Info</legend>
+            <label for="name"><b>Name:</b> </label><br><br>
+            <input type="text" name="name" id="name" placeholder="Enter your Name" size="16" maxlength="24"required><br><br>
+
+            <label for=""><b>Team:</b></label><br><br>
+            <input type="radio" name="Team" id="development" value="development" required>
+            <label for="development">Development</label><br>
+            <input type="radio" name="Team" id="training" value="training">
+            <label for="training">Training</label><br><br>
+
+            <label for="email"> <b>Email:</b></label> <br><br>
+            <input type="email" name="Email" id="email" placeholder="Enter your mail"><br><br>
+
+            <label for="manager"><b>Manager:</b></label><br><br>
+            <select name="Manager" id="manager">
+                <option value="Raina">Raina </option>
+                <option value="Dhoni">Dhoni</option>
+                <option value="Yuvraj">Yuvraj</option>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Content </legend>
+            <label for="subject"><b>Subject:</b></label><br><br>
+            <input type="text" name="Subject" id="subject" placeholder="Enter your Subject" size="16" minlength="7"maxlength="24" ><br><br>
+
+            <label><b>Task:</b></label><br><br>
+            <input type="checkbox" name="Task" id="checkin"><label for="checkin">Check-in</label><br>
+            <input type="checkbox" name="Task" id="permission"><label for="permission">Permission</label><br>
+            <input type="checkbox" name="Task" id="statusmail"><label for="statusmail">Status Mail</label><br>
+            <input type="checkbox" name="Task" id="checkout"><label for="checkout">Check out</label><br><br>
+
+            <label for="hoursWorked"><b>Hours Worked:</b></label>
+            <input type="number" name="hoursWorked" id="hoursWorked" required min="1" max="8"><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" required><br><br>
+
+            <b>Typing Test Result:</b><br><br>
+
+            <input type="file" name="Typingtest"><br><br>
+
+            <b>Content:</b><br><br>
+            <textarea name="comments" cols="60" rows="10">Enter your Content</textarea><br><br>
+            <input type="submit" name="Login-value" value="Login">
+        </fieldset>
+
+        </p>
+
+    </form>
+</body>
+
+</html>
